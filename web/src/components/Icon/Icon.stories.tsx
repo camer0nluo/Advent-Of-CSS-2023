@@ -16,55 +16,40 @@ import Icon from './Icon'
 
 const meta: Meta<typeof Icon> = {
   component: Icon,
+  tags: ['autodocs'],
 }
 
 export default meta
 
 type Story = StoryObj<typeof Icon>
 
-export const User: Story = {
+export const Calendar: Story = {
   args: {
-    id: 'user',
+    id: 'calendar',
   },
 }
 
-export const Upload: Story = {
+export const Check: Story = {
   args: {
-    id: 'upload',
+    id: 'check',
   },
 }
 
-export const ThumbsUp: Story = {
+export const Chevron: Story = {
   args: {
-    id: 'thumbsUp',
-  },
-}
-export const ThumbsDown: Story = {
-  args: {
-    id: 'thumbsDown',
-  },
-}
-export const Question: Story = {
-  args: {
-    id: 'question',
+    id: 'chevron',
   },
 }
 
-export const Plus: Story = {
+export const Close: Story = {
   args: {
-    id: 'plus',
+    id: 'close',
   },
 }
 
-export const Minus: Story = {
+export const EyeClosed: Story = {
   args: {
-    id: 'minus',
-  },
-}
-
-export const Logout: Story = {
-  args: {
-    id: 'logout',
+    id: 'eyeClosed',
   },
 }
 
@@ -74,30 +59,49 @@ export const EyeOpened: Story = {
   },
 }
 
-export const EyeClosed: Story = {
+export const Logout: Story = {
   args: {
-    id: 'eyeClosed',
-  },
-}
-export const Close: Story = {
-  args: {
-    id: 'close',
+    id: 'logout',
   },
 }
 
-export const Chevron: Story = {
+export const Minus: Story = {
   args: {
-    id: 'chevron',
-  },
-}
-export const Check: Story = {
-  args: {
-    id: 'check',
+    id: 'minus',
   },
 }
 
-export const Calendar: Story = {
+export const Plus: Story = {
   args: {
-    id: 'calendar',
+    id: 'plus',
+  },
+}
+
+export const Question: Story = {
+  args: {
+    id: 'question',
+  },
+}
+
+export const ThumbsDown: Story = {
+  args: {
+    id: 'thumbsDown',
+  },
+}
+export const ThumbsUp: Story = {
+  args: {
+    id: 'thumbsUp',
+  },
+}
+
+export const Upload: Story = {
+  args: {
+    id: 'upload',
+  },
+}
+
+export const User: Story = {
+  args: {
+    id: 'user',
   },
 }
