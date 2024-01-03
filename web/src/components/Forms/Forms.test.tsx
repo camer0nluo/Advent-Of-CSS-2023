@@ -11,4 +11,9 @@ describe('Forms', () => {
       render(<Forms />)
     }).not.toThrow()
   })
+  it('renders a form field successfully', () => {
+    expect(() => {
+      render(<Forms label="test" name="test" />)
+    }).not.toThrow()
+  })
 })
