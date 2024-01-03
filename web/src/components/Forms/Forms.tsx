@@ -1,8 +1,13 @@
-const Forms = () => {
+interface FormProps {
+  label?: string
+  name?: string
+}
+
+const Forms = ({ label, name }: FormProps) => {
   return (
-    <div>
-      <h2>{'Forms'}</h2>
-      <p>{'Find me in ./web/src/components/Forms/Forms.tsx'}</p>
+    <div className="field relative">
+      <label htmlFor="email">{label}</label>
+      <input type={name} name={name} placeholder="" required />
     </div>
   )
 }
